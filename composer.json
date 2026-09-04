@@ -1,0 +1,65 @@
+{
+    "name": "blackcube/yii-handler",
+    "description": "PSR-15 handler abstractions and pipeline for Yii3 applications",
+    "keywords": [
+        "yii3",
+        "psr-15",
+        "handler",
+        "pipeline"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/blackcubeio/yii-handler",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Philippe Gaultier",
+            "email": "philippe@blackcube.io"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/blackcubeio/yii-handler/issues",
+        "source": "https://github.com/blackcubeio/yii-handler"
+    },
+    "readme": "README.md",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.4",
+        "psr/http-factory": "^1.1",
+        "psr/http-message": "^2.0",
+        "psr/http-server-handler": "^1.0",
+        "psr/log": "^3.0",
+        "yiisoft/aliases": "^3.1",
+        "yiisoft/data-response": "^2.2",
+        "yiisoft/http": "^1.3",
+        "yiisoft/router": "^4.0",
+        "yiisoft/yii-view-renderer": "^7.4"
+    },
+    "suggest": {
+        "blackcube/yii-bleet": "Required for Dialog\\AbstractDialogInit and Dialog\\AbstractDialogConfirm (AureliaCommunication, DialogAction, UiColor)",
+        "blackcube/yii-bridge-model": "Required for Dialog\\AbstractDialogInit and Dialog\\AbstractDialogConfirm (BridgeFormModel)",
+        "yiisoft/session": "Required for Dialog\\AbstractDialogInit and Dialog\\AbstractDialogConfirm (SessionInterface)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blackcube\\Handler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Blackcube\\Handler\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-devel": "1.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "require-dev": {
+        "httpsoft/http-message": "^1.1",
+        "yiisoft/router-fastroute": "^4.0"
+    }
+}
